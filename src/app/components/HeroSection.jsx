@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 export default function HeroSection() {
   return (
-    <section>
+    <section className="md:h-screen flex">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -13,10 +13,10 @@ export default function HeroSection() {
           duration: 1,
           scale: { type: "spring", visualDuration: 0.6, bounce: 0.3 },
         }}
-        className="grid grid-cols-1 md:grid-cols-12"
+        className="grid grid-cols-1 md:grid-cols-10 mt-20 md:mt-0"
       >
-        <div className="col-span-7 place-self-center text-center md:text-left">
-          <h1 className="text-white mb-6 text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-extrabold">
+        <div className="col-span-6 place-self-center text-center md:text-left">
+          <h1 className="text-white mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-tight font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-purple-600">
               Olá, eu sou
             </span>
@@ -51,14 +51,14 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="col-span-4 place-self-center md:col-start-9 mt-6 lg:mt-0">
-          <div className="relative rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
+        <div className="col-span-3 place-self-center md:col-end-11 mt-12 md:mt-0">
+          <div className="w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]">
             <Image
               src="/images/hero-image.jpg"
               alt="eu mesmo"
               width={350}
               height={350}
-              className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="rounded-full"
             />
           </div>
         </div>
