@@ -6,16 +6,16 @@ import { motion } from "motion/react";
 export default function HeroSection() {
   return (
     <section className="md:h-screen flex">
-      <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 1,
-          scale: { type: "spring", visualDuration: 0.6, bounce: 0.3 },
-        }}
-        className="grid grid-cols-1 md:grid-cols-10 mt-20 md:mt-0"
-      >
-        <div className="col-span-6 place-self-center text-center md:text-left">
+      <div className="grid grid-cols-1 md:grid-cols-10 mt-20 md:mt-0">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1,
+            scale: { type: "spring", visualDuration: 0.6, bounce: 0.3 },
+          }}
+          className="col-span-6 place-self-center text-center md:text-left"
+        >
           <h1 className="text-white mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-tight font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-purple-600">
               Olá, eu sou
@@ -50,8 +50,16 @@ export default function HeroSection() {
               </span>
             </button>
           </div>
-        </div>
-        <div className="col-span-3 place-self-center md:col-end-11 mt-12 md:mt-0">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1,
+            scale: { type: "spring", visualDuration: 0.6, bounce: 0.3 },
+          }}
+          className="col-span-3 place-self-center md:col-end-11 mt-12 md:mt-0"
+        >
           <div className="w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]">
             <Image
               src="/images/hero-image.jpg"
@@ -61,8 +69,8 @@ export default function HeroSection() {
               className="rounded-full"
             />
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }
