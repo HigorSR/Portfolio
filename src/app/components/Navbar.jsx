@@ -1,3 +1,5 @@
+import MenuIcon from "@mui/icons-material/Menu";
+
 export default function Navbar() {
   return (
     <div className="relative">
@@ -19,6 +21,25 @@ export default function Navbar() {
               Contatos
             </span>
           </p>
+          <div className="dropdown dropdown-end mt-2 md:hidden">
+            <div tabIndex={0} role="button" className="btn m-1">
+              <MenuIcon></MenuIcon>
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+            >
+              <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
+                <a>Sobre</a>
+              </li>
+              <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
+                <a>Projetos</a>
+              </li>
+              <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
+                <a>Contatos</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
