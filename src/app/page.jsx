@@ -14,6 +14,7 @@ export default function Home() {
         <ProjectsSection />
         <ExperienceSection />
       </div>
+      
     </main>
   );
 }
