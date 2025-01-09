@@ -37,8 +37,8 @@ const sobreItems = [
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col sm:items-center md:flex-row md:justify-between gap-10 my-20 md:h-screen md:my-0 text-white">
-      <div className="rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none overflow-hidden">
+    <div className="flex flex-col sm:items-center lg:flex-row md:justify-between gap-10 my-20 lg:h-screen md:my-0 text-white">
+      <div className="rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none overflow-hidden md:w-[500px] lg:w-[700px]">
         <Image
           src="/images/about-image.jpg"
           alt="programming"
@@ -46,16 +46,18 @@ const AboutSection = () => {
           height={700}
         />
       </div>
-      <div className="md:w-1/2 ">
-        <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
-        <p className="text-base lg:text-lg mb-4">
-          Sou um desenvolvedor web apaixonado por criar aplicações web
-          interativas e responsivas. Tenho experiência em trabalhar com
-          JavaScript, React, Redux, Node.js, Express, PostgreSQL, HTML, CSS e
-          Git. Aprendo rápido e estou sempre em busca de expandir meus
-          conhecimentos e habilidades. Trabalho em equipe e estou animado para
-          trabalhar com outras pessoas para criar aplicativos incríveis.
-        </p>
+      <div className="lg:w-1/2 ">
+        <div>
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
+          <p className="text-base lg:text-lg mb-4">
+            Sou um desenvolvedor web apaixonado por criar aplicações web
+            interativas e responsivas. Tenho experiência em trabalhar com
+            JavaScript, React, Redux, Node.js, Express, PostgreSQL, HTML, CSS e
+            Git. Aprendo rápido e estou sempre em busca de expandir meus
+            conhecimentos e habilidades. Trabalho em equipe e estou animado para
+            trabalhar com outras pessoas para criar aplicativos incríveis.
+          </p>
+        </div>
         <div className="collapse bg-base-200 mb-2">
           <input type="radio" name="my-accordion-1" defaultChecked />
           <div className="collapse-title text-xl font-medium">Habilidades</div>
