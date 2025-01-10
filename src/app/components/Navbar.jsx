@@ -29,14 +29,6 @@ export default function Navbar() {
               Experiência
             </p>
           </Link>
-          <Link
-            href="#Contatos"
-            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
-          >
-            <p className="block px-4 py-3 bg-[#242424] rounded-full">
-              Contatos
-            </p>
-          </Link>
           {/* mobile menu */}
           <div className="dropdown dropdown-end mt-1 lg:hidden">
             <div tabIndex={0} role="button" className="btn m-1">
@@ -51,9 +43,6 @@ export default function Navbar() {
               </li>
               <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
                 <Link href="#Experiencia">Experiência</Link>
-              </li>
-              <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-                <Link href="#Contatos">Contatos</Link>
               </li>
             </ul>
           </div>
