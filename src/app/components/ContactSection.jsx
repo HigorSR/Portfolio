@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ContactSection() {
   return (
     <section id="Contatos" className="flex flex-col text-white mt-10 border-t-2 border-slate-400 mb-10 sm:mb-24">
-      <div className="flex flex-col gap-8 md:w-2/5 mt-5">
+      <div className="flex flex-col gap-8 md:w-3/5 lg:w-2/5 mt-5">
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl font-bold">Vamos nos conectar</h1>
           <p>
@@ -39,7 +39,6 @@ export default function ContactSection() {
           </a>
         </div>
       </div>
-      <form action=""></form>
     </section>
   );
 }
