@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -41,9 +42,12 @@ export default function HeroSection() {
             funcionais por meio de código limpo, eficiente e bem estruturado.
           </p>
           <div>
-            <button className="px-6 py-3 w-fit rounded-full mr-4 bg-gradient-to-br from-orange-600 to-purple-600 bg-white hover:bg-slate-200 text-white">
+            <Link
+              href="#Contatos"
+              className="px-6 py-3 w-fit rounded-full mr-4 bg-gradient-to-br from-orange-600 to-purple-600 text-white"
+            >
               Contatos
-            </button>
+            </Link>
             <button className="px-1 py-1 w-fit rounded-full bg-gradient-to-br from-orange-600 to-purple-600 hover:bg-slate-800 text-white mt-3">
               <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">
                 Baixar CV
