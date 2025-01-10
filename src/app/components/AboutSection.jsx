@@ -37,7 +37,7 @@ const sobreItems = [
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col sm:items-center lg:flex-row md:justify-between gap-10 my-20 lg:h-screen md:my-0 text-white">
+    <div id="Sobre" className="flex flex-col sm:items-center lg:flex-row md:justify-between gap-10 my-20 lg:h-screen md:my-0 text-white">
       <div className="rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none overflow-hidden md:w-[500px] lg:w-[700px]">
         <Image
           src="/images/about-image.jpg"
