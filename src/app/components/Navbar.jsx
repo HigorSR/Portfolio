@@ -6,19 +6,16 @@ export default function Navbar() {
     <div className="relative">
       <nav className="text-white">
         <p className="text-2xl py-4 mt-2 absolute">higor.dev</p>
-        <div className="flex gap-5 absolute right-0 mt-2">
-          
+        <div className="flex gap-3 absolute right-0 mt-3">
           <Link
             href="#Sobre"
-            className="hidden md:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
+            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
           >
-            <p className="block px-4 py-3 bg-[#242424] rounded-full">
-              Sobre
-            </p>
+            <p className="block px-4 py-3 bg-[#242424] rounded-full">Sobre</p>
           </Link>
           <Link
             href="#Projetos"
-            className="hidden md:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
+            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
           >
             <p className="block px-4 py-3 bg-[#242424] rounded-full">
               Projetos
@@ -26,7 +23,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="#Experiencia"
-            className="hidden md:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
+            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
           >
             <p className="block px-4 py-3 bg-[#242424] rounded-full">
               Experiência
@@ -34,28 +31,29 @@ export default function Navbar() {
           </Link>
           <Link
             href="#Contatos"
-            className="hidden md:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
+            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
           >
             <p className="block px-4 py-3 bg-[#242424] rounded-full">
               Contatos
             </p>
           </Link>
-          <div className="dropdown dropdown-end mt-2 md:hidden">
+          {/* mobile menu */}
+          <div className="dropdown dropdown-end mt-1 lg:hidden">
             <div tabIndex={0} role="button" className="btn m-1">
               <MenuIcon></MenuIcon>
             </div>
             <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
               <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-                <a>Sobre</a>
+                <Link href="#Sobre">Sobre</Link>
               </li>
               <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-                <a>Projetos</a>
+                <Link href="#Projetos">Projetos</Link>
               </li>
               <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-                <a>Experiência</a>
+                <Link href="#Experiencia">Experiência</Link>
               </li>
               <li className="mb-1 px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-                <a>Contatos</a>
+                <Link href="#Contatos">Contatos</Link>
               </li>
             </ul>
           </div>
