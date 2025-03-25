@@ -7,7 +7,7 @@ export default function ProjectsSection() {
     {
       id: 1,
       title: "Intro Component With Sign Up Form",
-      img: "/images/intro-component-with-sign-up-form.png",
+      img: "/images/project01.png",
       code: "https://github.com/HigorSR/intro-component-with-sign-up-form",
       live: "https://higorsr.github.io/intro-component-with-sign-up-form/",
     },
@@ -39,21 +39,24 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="Projetos" className="flex flex-col items-center gap-10 text-white my-10 md:pt-10">
+    <section
+      id="Projetos"
+      className="flex flex-col items-center gap-10 text-white my-10 md:pt-10"
+    >
       <h1 className="text-4xl font-bold">Projetos</h1>
       <div className="flex gap-8">
-        <div className="hidden md:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-          <button className="block px-4 py-3 bg-[#242424] rounded-full">
+        <div className="hidden md:inline text-lg px-1 py-1 rounded-full bg-gradient-to-br from-orange-600 to-purple-600 hover:bg-slate-800">
+          <button className="block px-4 py-3 bg-[#242424] hover:bg-slate-800 rounded-full">
             Tudo
           </button>
         </div>
-        <div className="hidden md:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-          <button className="block px-4 py-3 bg-[#242424] rounded-full">
+        <div className="hidden md:inline text-lg px-1 py-1 rounded-full bg-gradient-to-br from-orange-600 to-purple-600 hover:bg-slate-800">
+          <button className="block px-4 py-3 bg-[#242424] hover:bg-slate-800 rounded-full">
             Web
           </button>
         </div>
-        <div className="hidden md:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600">
-          <button className="block px-4 py-3 bg-[#242424] rounded-full">
+        <div className="hidden md:inline text-lg px-1 py-1 rounded-full bg-gradient-to-br from-orange-600 to-purple-600 hover:bg-slate-800">
+          <button className="block px-4 py-3 bg-[#242424] hover:bg-slate-800 rounded-full">
             Mobile
           </button>
         </div>
