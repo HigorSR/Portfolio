@@ -9,13 +9,13 @@ export default function Navbar() {
         <div className="flex gap-3 absolute right-0 mt-3">
           <Link
             href="#Sobre"
-            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
+            className="hidden lg:inline text-lg px-1 py-1 rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
           >
             <p className="block px-4 py-3 bg-[#242424] rounded-full">Sobre</p>
           </Link>
           <Link
             href="#Projetos"
-            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
+            className="hidden lg:inline text-lg px-1 py-1 rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
           >
             <p className="block px-4 py-3 bg-[#242424] rounded-full">
               Projetos
@@ -23,7 +23,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="#Experiencia"
-            className="hidden lg:inline text-lg px-1 py-1 hover:rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
+            className="hidden lg:inline text-lg px-1 py-1 rounded-full hover:bg-gradient-to-br hover:from-orange-600 hover:to-purple-600"
           >
             <p className="block px-4 py-3 bg-[#242424] rounded-full">
               Experiência
