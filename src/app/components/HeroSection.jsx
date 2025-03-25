@@ -48,7 +48,7 @@ export default function HeroSection() {
             >
               Contatos
             </Link>
-            <button className="px-1 py-1 w-fit rounded-full bg-gradient-to-br from-orange-600 to-purple-600 hover:bg-slate-800 text-white mt-3">
+            <button className="px-1 py-1 w-fit rounded-full bg-gradient-to-br from-orange-600 to-purple-600 text-white mt-3">
               <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">
                 Baixar CV
               </span>
